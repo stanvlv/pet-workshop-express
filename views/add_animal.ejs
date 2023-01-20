@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new animal</title>
+</head>
+<body>
+    <h1>Create a new animal</h1>
+    <form action="/create_animal" method="POST">
+        <label for="pet_name">Pet's name: </label>
+        <input type="text" name="name" id="pet_name">
+        <label for="pet_name">Pet's age: </label>
+        <input type="text" name="age" id="pet_age">
+        <label for="pet_name">Pet's desc: </label>
+        <input type="text" name="desc" id="pet_desc">
+        <label for="pet_name">Pet's breed: </label>
+        <input type="text" name="breed" id="pet_breed">
+        <select name="category">
+            <option value="cats">cats</option>
+            <option value="dogs">dogs</option>
+            <option value="rabbits">rabbits</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
